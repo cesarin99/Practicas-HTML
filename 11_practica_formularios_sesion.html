@@ -6,9 +6,10 @@
     <script>
         function sesion() {
             // alert('funciona');
-            var txtUser = document.getElementById('user').value;
-            var txtPasswd = document.getElementById('passwd').value;
-            var remember = document.getElementById('remember').checked;
+            var formulario = document.getElementById('loginform');
+            var txtUser = formulario.user.value;
+            var txtPasswd = formulario.passwd.value;
+            var remember = formulario.remember.checked;
             var resultado = document.getElementById('resultado');
             resultado.innerHTML = 'Usuario: ' + txtUser;
         }
